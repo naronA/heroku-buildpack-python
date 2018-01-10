@@ -23,6 +23,7 @@ export BUILDPACK_LOG_FILE=${BUILDPACK_LOG_FILE:-/dev/null}
 
 # Prepend proper path for virtualenv hackery. This will be deprecated soon.
 export PATH=:/usr/local/bin:$PATH
+export PATH=/app/.linuxbrew/bin:$PATH
 
 # Paths.
 BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
